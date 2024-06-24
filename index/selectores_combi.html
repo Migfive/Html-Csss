@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {
+            color: aquamarine;
+        }
+        div >div {
+            background-color: blueviolet;
+        }
+        .rojo{
+            color: bisque;
+        }
+        /* Selecctor de al lado */
+        div +section{
+            color: bisque;
+            background-color: aqua;
+        }
+        section ~ p{
+            color:cadetblue ;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Platzi</p>
+        <p>Es</p>
+        <div class="rojo">Increíble</div>
+    </div>
+    <div>
+        Master
+    </div>
+    <section>
+        Es lo mejor
+    </section>
+    <p>clase de selectores</p>
+</body>
+</html>
