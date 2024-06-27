@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            padding-top: 10%;
+            align-items: center;
+        }
+        .todo{
+            position: relative;
+            width: 380px;
+            height: 600px;
+            background: peachpuff;
+            border-radius: 5%;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+        }
+        .fondo img{
+            width: 400px;
+            height: 35vh;
+            z-index: 1;
+            position: absolute;
+        }
+        .perfil{
+            padding:280px 0 0 145px;
+        }
+        .perfil img{
+            position: absolute;
+            z-index: 2;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            
+        }
+        .texto{
+            position: absolute;
+            bottom: 10%; /* Ajusta según sea necesario */
+            width: 100%;
+            text-align: center;
+            z-index: 3;
+        }
+        .texto p{
+            font-size: 20px; /* Ajusta el tamaño del texto según sea necesario */
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="todo">
+            <div class="fondo">
+                <img src="https://cdn.pixabay.com/photo/2018/07/13/19/56/st-peters-church-3536449_1280.jpg" alt="">
+            </div>
+            <div class="perfil">
+                <img src="https://i.ibb.co/LSCs9xk/perfil.png" alt="perfil" border="0">
+            </div>
+            <div class="texto">
+                <p class="nombre">Miguel Angel Santa Polanco</p>
+                <p>22 años</p>
+                <p>saldo: $0</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
